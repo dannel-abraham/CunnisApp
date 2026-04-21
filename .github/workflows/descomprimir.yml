@@ -1,53 +1,40 @@
-# .github/workflows/descomprimir.yml
 name: Descomprimir ZIP Automáticamente
 
-# 👇 Líneas nuevas para dar permiso de escritura
+# Permiso necesario para poder subir (push) los cambios al repositorio
 permissions:
   contents: write
 
+# Se activa cuando se sube un archivo .zip a la rama main
 on:
   push:
     branches: [ "main" ]
     paths:
       - '**.zip'
+  # También puedes ejecutarlo manualmente desde la pestaña Actions
   workflow_dispatch:
-
-# Se activa cuando hay un 'push' al repositorio principal...
-on:
-  push:
-    branches: [ "main" ] # O "master", según tu rama principal
-    paths:
-      - '**.zip'       # ... pero solo si se sube un archivo .zip
-  workflow_dispatch: # Permite ejecutarlo manualmente desde la pestaña "Actions"
 
 jobs:
   unzip-and-push:
-    runs-on: ubuntu-latest # Usa un servidor virtual de Linux (gratuito)
+    runs-on: ubuntu-latest
+
     steps:
-      # 1. Descarga una copia de tu repositorio al servidor virtual
-      - name: Obtener el código del repositorio
+      # 1. Descarga el código del repositorio
+      - name: Obtener el código
         uses: actions/checkout@v4
 
-      # 2. Encuentra y descomprime el archivo ZIP
-      - name: Buscar y descomprimir el archivo
+      # 2. Encuentra el primer .zip en la raíz y lo descomprime
+      - name: Buscar y descomprimir el ZIP
         run: |
-          # Encuentra el primer archivo .zip en la carpeta actual
           ZIP_FILE=$(find . -maxdepth 1 -name "*.zip" | head -1)
-
-          # Si no se encuentra ningún ZIP, detiene el proceso
           if [ -z "$ZIP_FILE" ]; then
             echo "No se encontró ningún archivo .zip."
             exit 1
           fi
-
           echo "Descomprimiendo: $ZIP_FILE"
-          # Descomprime el archivo, sobrescribiendo si es necesario
           unzip -o "$ZIP_FILE"
-
-          # Elimina el archivo .zip original
           rm "$ZIP_FILE"
 
-      # 3. Sube los cambios (el código descomprimido) de vuelta al repositorio
+      # 3. Sube los cambios (el código ya descomprimido) al repositorio
       - name: Subir el código descomprimido
         run: |
           git config user.name "github-actions[bot]"
