@@ -1,6 +1,17 @@
 # .github/workflows/descomprimir.yml
 name: Descomprimir ZIP Automáticamente
 
+# 👇 Líneas nuevas para dar permiso de escritura
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - '**.zip'
+  workflow_dispatch:
+
 # Se activa cuando hay un 'push' al repositorio principal...
 on:
   push:
