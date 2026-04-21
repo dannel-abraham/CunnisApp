@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Cunnis</string>
+    <string name="app_logo">CUNNIS Logo</string>
+    <!-- General texts -->
+    <string name="total">Total</string>
+    <string name="machos">Males</string>
+    <string name="hembras">Females</string>
+    <string name="sin_conejos">No rabbits registered</string>
+    <string name="menu">Menu</string>
+    <string name="agregar">Add</string>
+    <!-- Photo texts -->
+    <string name="foto_conejo">Rabbit photo</string>
+    <string name="estado">Status</string>
+    <!-- Version text -->
+    <string name="slogan">Intelligent Rabbit Management</string>
+    <!-- app slogan -->
+    <string name="raza">Breed:</string>
+    <!-- detail strings -->
+    <string name="sexo">Gender:</string>
+    <string name="edad">Age:</string>
+    <string name="peso">Weight:</string>
+    <string name="nacimiento">Date of Birth: </string>
+    <string name="InformacindeReproduccin">Reproduction Information</string>
+    <string name="partos">Births: 0</string>
+    <string name="ultimocelo">Last heat: Not recorded</string>
+    <string name="HistorialdePartos">Birth History</string>
+    <string name="InformacionGeneral">General Information</string>
+    <string name="historialpesos">Weight History</string>
+    <string name="volver">Back</string>
+    <string name="registrarpeso">Record Weight</string>
+    <string name="Editar">Edit</string>
+    <string name="nombreconejo">Rabbit Name</string>
+    <string name="status">Status</string>
+    <string name="registrar_celo">Register Heat</string>
+    <!-- New layout texts -->
+    <string name="registrar_monta">Register Mating</string>
+    <string name="registrar_parto">Register Birth</string>
+    <string name="activo">Active</string>
+    <string name="informacion_general_mayusculas">GENERAL INFORMATION</string>
+    <string name="nacimiento_corto">Birth:</string>
+    <string name="informacion_reproductiva_mayusculas">REPRODUCTIVE INFORMATION</string>
+    <string name="historial_de_pesos_mayusculas">WEIGHT HISTORY</string>
+    <string name="historial_de_partos_mayusculas">BIRTH HISTORY</string>
+    <string name="estado_celo_calculando">Heat status: Calculating...</string>
+    <string name="proximo_celo">Next heat: -</string>
+    <string name="total_partos">Total births: 0</string>
+    <string name="total_crias">Total offspring: 0</string>
+    <string name="crias_vivas">Live offspring: 0</string>
+    <string name="crias_muertas">Dead offspring: 0</string>
+    <string name="semental_no">Stud: No</string>
+    <string name="montas_realizadas">Matings performed: 0</string>
+    <string name="hijas_engendradas">Daughters sired: 0</string>
+    <string name="crias_engendradas">Offspring sired: 0</string>
+    <string name="montas_exitosas">Successful matings: 0</string>
+    <!-- menu -->
+    <string name="estadisticas">📊 Statistics</string>
+    <string name="buscar">🔍 Rabbit Search</string>
+    <string name="partos_menu">👶 Birth Registry</string>
+    <string name="celos">❤️ Mating Registry</string>
+    <string name="exportar">📤 Export Data</string>
+    <string name="backup">🗃️ Backup Data</string>
+    <string name="config">⚙️ Configuration</string>
+</resources>

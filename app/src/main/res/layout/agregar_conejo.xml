@@ -1,0 +1,288 @@
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#F5F5F5"
+	android:fillViewport="true">
+	<LinearLayout
+		android:id="@+id/linear13"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear14"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="12dp"
+			android:background="#4CAF50"
+			android:orientation="horizontal"
+			android:elevation="4dp">
+			<Button
+				android:id="@+id/btnAtras"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:textSize="24sp"
+				android:textColor="#FFFFFF"
+				android:background="@android:drawable/ic_menu_revert" />
+			<TextView
+				android:id="@+id/textview25"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="@string/agregar_conejo"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:layout_weight="1" />
+			<View
+				android:id="@+id/view15"
+				android:layout_width="48dp"
+				android:layout_height="48dp" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear16"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:padding="20dp"
+			android:orientation="vertical"
+			android:background="@android:color/white"
+			android:elevation="2dp">
+			<TextView
+				android:id="@+id/textview26"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="4dp"
+				android:text="@string/nombreconejo"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#333333" />
+			<EditText
+				android:id="@+id/etNombre"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:padding="12dp"
+				android:background="@drawable/edittext_background"
+				android:textSize="16sp"
+				android:hint="Ej: Pelusa"
+				android:inputType="textPersonName" />
+			<TextView
+				android:id="@+id/textview27"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="4dp"
+				android:text="Identificador"
+				android:textSize="12sp"
+				android:textColor="#666666" />
+			<TextView
+				android:id="@+id/tvIdentificador"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="12dp"
+				android:background="#F0F0F0"
+				android:text="Se generará automáticamente"
+				android:textSize="14sp"
+				android:textColor="#666666" />
+			<TextView
+				android:id="@+id/textview28"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:layout_marginBottom="4dp"
+				android:text="@string/sexo"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#333333" />
+			<Spinner
+				android:id="@+id/spSexo"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:padding="12dp"
+				android:background="@drawable/spinner_background"
+				android:spinnerMode="dropdown" />
+			<TextView
+				android:id="@+id/textview29"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:layout_marginBottom="4dp"
+				android:text="@string/raza"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#333333" />
+			<EditText
+				android:id="@+id/etRaza"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:padding="12dp"
+				android:background="@drawable/edittext_background"
+				android:textSize="16sp"
+				android:hint="Ej: Nueva Zelanda" />
+			<TextView
+				android:id="@+id/textview30"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:layout_marginBottom="4dp"
+				android:text="@string/nacimiento"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#333333" />
+			<LinearLayout
+				android:id="@+id/linear20"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/etFechaNacimiento"
+					android:layout_width="wrap_content"
+					android:layout_height="48dp"
+					android:padding="12dp"
+					android:background="@drawable/edittext_background"
+					android:textSize="16sp"
+					android:hint="YYYY-MM-DD"
+					android:layout_weight="1"
+					android:inputType="date" />
+				<Button
+					android:id="@+id/btnSeleccionarFecha"
+					android:layout_width="48dp"
+					android:layout_height="48dp"
+					android:background="#4CAF50"
+					android:text="📅"
+					android:textSize="16sp"
+					android:textColor="#FFFFFF"
+					android:layout_marginStart="8dp" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview31"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:layout_marginBottom="4dp"
+				android:text="Peso (lb) *"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#333333" />
+			<EditText
+				android:id="@+id/etPeso"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:padding="12dp"
+				android:background="@drawable/edittext_background"
+				android:textSize="16sp"
+				android:hint="Ej: 2.5"
+				android:inputType="numberDecimal" />
+			<TextView
+				android:id="@+id/textview32"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:layout_marginBottom="4dp"
+				android:text="Foto (opcional)"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#333333" />
+			<LinearLayout
+				android:id="@+id/linear17"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/ivFoto"
+					android:layout_width="120dp"
+					android:layout_height="120dp"
+					android:background="#E0E0E0"
+					android:src="@drawable/icon_image_twotone"
+					android:scaleType="centerCrop" />
+				<Button
+					android:id="@+id/btnTomarFoto"
+					android:layout_width="80dp"
+					android:layout_height="80dp"
+					android:padding="12dp"
+					android:background="@drawable/icon_camera_twotone"
+					android:textSize="12sp"
+					android:layout_marginStart="16dp" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview33"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:layout_marginBottom="8dp"
+				android:text="Información de padres (opcional)"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#333333" />
+			<TextView
+				android:id="@+id/textview34"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="4dp"
+				android:text="Madre"
+				android:textSize="12sp"
+				android:textColor="#666666" />
+			<Spinner
+				android:id="@+id/spMadre"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:padding="12dp"
+				android:background="@drawable/spinner_background"
+				android:spinnerMode="dropdown" />
+			<TextView
+				android:id="@+id/textview35"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="4dp"
+				android:text="Padre"
+				android:textSize="12sp"
+				android:textColor="#666666" />
+			<Spinner
+				android:id="@+id/spPadre"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:padding="12dp"
+				android:background="@drawable/spinner_background"
+				android:spinnerMode="dropdown" />
+			<LinearLayout
+				android:id="@+id/linear18"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="24dp"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/btnCancelar"
+					android:layout_width="0dp"
+					android:layout_height="48dp"
+					android:background="#F44336"
+					android:text="Cancelar"
+					android:textSize="16sp"
+					android:textColor="#FFFFFF"
+					android:layout_weight="1"
+					android:layout_marginEnd="8dp" />
+				<Button
+					android:id="@+id/btnGuardar"
+					android:layout_width="0dp"
+					android:layout_height="48dp"
+					android:background="#4CAF50"
+					android:text="Guardar"
+					android:textSize="16sp"
+					android:textColor="#FFFFFF"
+					android:layout_weight="1"
+					android:layout_marginStart="8dp" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview36"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text="* Campos obligatorios"
+				android:textSize="12sp"
+				android:textColor="#666666" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

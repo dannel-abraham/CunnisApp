@@ -1,0 +1,515 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mainLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#F5F5F5">
+	<LinearLayout
+		android:id="@+id/linear67"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:background="#4CAF50"
+		android:orientation="horizontal">
+		<ImageButton
+			android:id="@+id/btnAtras"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:scaleType="center"
+			android:src="@android:drawable/ic_menu_revert"
+			android:tint="#FFFFFF" />
+		<TextView
+			android:id="@+id/tvTitulo"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Estadísticas"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:layout_weight="1" />
+		<ImageButton
+			android:id="@+id/btnActualizar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:scaleType="center"
+			android:src="@android:drawable/ic_menu_rotate"
+			android:tint="#FFFFFF" />
+	</LinearLayout>
+	<ScrollView
+		android:id="@+id/vscroll4"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/linear68"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="16dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear69"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:padding="16dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical"
+				android:elevation="2dp">
+				<TextView
+					android:id="@+id/textview61"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="16dp"
+					android:text="RESUMEN GENERAL"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#333333" />
+				<LinearLayout
+					android:id="@+id/linear70"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview62"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="Total Activos:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvTotalActivos"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#4CAF50" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear71"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview63"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="♂ Machos:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvTotalMachos"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#2196F3" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear72"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview64"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="♀ Hembras:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvTotalHembras"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#E91E63" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear73"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview65"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="⚖️ Peso Promedio:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvPesoPromedio"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0.00 lb"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FF9800" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear74"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview66"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="🎂 Edad Promedio:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvEdadPromedio"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0 días"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#9C27B0" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear75"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:padding="16dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical"
+				android:elevation="2dp">
+				<TextView
+					android:id="@+id/textview67"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="16dp"
+					android:text="📅 DISTRIBUCIÓN POR EDAD"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#333333" />
+				<LinearLayout
+					android:id="@+id/linear76"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview68"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="👶 Cachorros (0-3 meses):"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvCachorros"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FF9800" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear77"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview69"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="👦 Jóvenes (3-12 meses):"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvJovenes"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#4CAF50" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear78"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview70"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="👴 Adultos (+12 meses):"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvAdultos"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#2196F3" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear79"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:padding="16dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical"
+				android:elevation="2dp">
+				<TextView
+					android:id="@+id/textview71"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="16dp"
+					android:text="🎯 DISTRIBUCIÓN POR RAZA"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#333333" />
+				<LinearLayout
+					android:id="@+id/layoutRazas"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/tvSinRazas"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="16dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="No hay datos de razas"
+						android:textSize="12sp"
+						android:textColor="#999999" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear80"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:padding="16dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical"
+				android:elevation="2dp">
+				<TextView
+					android:id="@+id/textview72"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="16dp"
+					android:text="⚖️ ESTADÍSTICAS DE PESO"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#333333" />
+				<LinearLayout
+					android:id="@+id/linear81"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview73"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="📊 Peso Máximo:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvPesoMaximo"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0.00 lb"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#F44336" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear82"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview74"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="📉 Peso Mínimo:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvPesoMinimo"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0.00 lb"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#2196F3" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear83"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview75"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="📈 Peso Promedio Machos:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvPesoPromedioMachos"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0.00 lb"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#4CAF50" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear84"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview76"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="📈 Peso Promedio Hembras:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvPesoPromedioHembras"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0.00 lb"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#E91E63" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear85"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="16dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical"
+				android:elevation="2dp">
+				<TextView
+					android:id="@+id/textview77"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="16dp"
+					android:text="👨‍👩‍👧‍👦 REPRODUCCIÓN"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#333333" />
+				<LinearLayout
+					android:id="@+id/linear86"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview78"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="📋 Total Partos:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvTotalPartos"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#9C27B0" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear87"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview79"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="👶 Crías Totales:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvTotalCrias"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#009688" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear88"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview80"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="📈 Promedio por Parto:"
+						android:textSize="12sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvPromedioCrias"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0.0"
+						android:textSize="12sp"
+						android:textStyle="bold"
+						android:textColor="#FF5722" />
+				</LinearLayout>
+			</LinearLayout>
+			<ProgressBar
+				android:id="@+id/progressBar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="16dp"
+				android:indeterminate="false"
+				style="?android:progressBarStyle"
+				android:layout_gravity="center_horizontal|center_vertical"
+				android:visibility="gone" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

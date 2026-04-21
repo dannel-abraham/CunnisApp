@@ -1,0 +1,158 @@
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#f5f5f5">
+	<LinearLayout
+		android:id="@+id/main_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/tvTitulo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:padding="15dp"
+			android:background="#E91E63"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="❤️ ESTADÍSTICAS DE CELOS"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF" />
+		<TextView
+			android:id="@+id/textview52"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:padding="8dp"
+			android:text="📈 ESTADÍSTICAS GENERALES"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+		<LinearLayout
+			android:id="@+id/linear_general_stats"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:padding="10dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical" />
+		<TextView
+			android:id="@+id/textview53"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="📊 FRECUENCIA DE CELOS"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+		<LinearLayout
+			android:id="@+id/linear_frecuencia_stats"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:padding="10dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical" />
+		<TextView
+			android:id="@+id/textview54"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="🏆 TOP 5 HEMBRAS"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+		<LinearLayout
+			android:id="@+id/linear_top_hembras"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:padding="10dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical" />
+		<LinearLayout
+			android:id="@+id/linear17"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/btn_por_anio"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="5dp"
+				android:text="Por Año"
+				android:textSize="12sp"
+				android:layout_weight="1"
+				android:backgroundTint="#2196F3" />
+			<Button
+				android:id="@+id/btn_por_mes"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:text="Por Mes"
+				android:textSize="12sp"
+				android:layout_weight="1"
+				android:backgroundTint="#4CAF50" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear_periodo_stats"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:padding="10dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical" />
+		<TextView
+			android:id="@+id/textview55"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="🆕 ÚLTIMOS CELOS"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+		<LinearLayout
+			android:id="@+id/linear_ultimos_celos"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:padding="10dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical" />
+		<TextView
+			android:id="@+id/textview56"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="❌ HEMBRAS SIN CELOS"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+		<LinearLayout
+			android:id="@+id/linear_hembras_sin_celos"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:padding="10dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical" />
+		<TextView
+			android:id="@+id/textview57"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="🎯 CELOS POR EDAD"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+		<LinearLayout
+			android:id="@+id/linear_celos_edad"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="20dp"
+			android:padding="10dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical" />
+	</LinearLayout>
+</ScrollView>

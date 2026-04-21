@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_estadisticas"
+        android:title="@string/estadisticas" />
+    <item
+        android:id="@+id/control_partos"
+        android:title="🤱 Control de Partos" /> 
+    <item
+        android:id="@+id/control_celos"
+        android:title="💖 Control de Celos" />    
+    <item
+        android:id="@+id/menu_buscar"
+        android:title="@string/buscar" />
+    <item
+        android:id="@+id/menu_partos"
+        android:title="@string/partos_menu" />
+    <item
+        android:id="@+id/menu_celos"
+        android:title="@string/celos" />
+    <item
+        android:id="@+id/menu_exportar"
+        android:title="@string/exportar" />
+    <item
+        android:id="@+id/menu_backup"
+        android:title="@string/backup" /> 
+    <item
+        android:id="@+id/menu_configuracion"
+        android:title="@string/config" />
+        
+</menu>

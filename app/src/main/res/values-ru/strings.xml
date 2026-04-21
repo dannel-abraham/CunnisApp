@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Cunnis</string>
+    <string name="app_logo">Логотип CUNNIS</string>
+    <!-- Общие тексты -->
+    <string name="total">Всего</string>
+    <string name="machos">Самцы</string>
+    <string name="hembras">Самки</string>
+    <string name="sin_conejos">Нет зарегистрированных кроликов</string>
+    <string name="menu">Меню</string>
+    <string name="agregar">Добавить</string>
+    <!-- Тексты для фото -->
+    <string name="foto_conejo">Фото кролика</string>
+    <string name="estado">Статус</string>
+    <!-- Тексты для версии -->
+    <string name="slogan">Интеллектуальное кролиководство</string>
+    <!-- слоган приложения -->
+    <string name="raza">Порода:</string>
+    <!-- строки деталей -->
+    <string name="sexo">Пол:</string>
+    <string name="edad">Возраст:</string>
+    <string name="peso">Вес:</string>
+    <string name="nacimiento">Дата рождения: </string>
+    <string name="InformacindeReproduccin">Информация о размножении</string>
+    <string name="partos">Окролы: 0</string>
+    <string name="ultimocelo">Последняя охота: Не зарегистрирована</string>
+    <string name="HistorialdePartos">История окролов</string>
+    <string name="InformacionGeneral">Общая информация</string>
+    <string name="historialpesos">История веса</string>
+    <string name="volver">Назад</string>
+    <string name="registrarpeso">Записать вес</string>
+    <string name="Editar">Редактировать</string>
+    <string name="nombreconejo">Имя кролика</string>
+    <string name="status">Статус</string>
+    <string name="registrar_celo">Зарегистрировать охоту</string>
+    <!-- Новые тексты из макета -->
+    <string name="registrar_monta">Зарегистрировать случку</string>
+    <string name="registrar_parto">Зарегистрировать окрол</string>
+    <string name="activo">Активный</string>
+    <string name="informacion_general_mayusculas">ОБЩАЯ ИНФОРМАЦИЯ</string>
+    <string name="nacimiento_corto">Рождение:</string>
+    <string name="informacion_reproductiva_mayusculas">РЕПРОДУКТИВНАЯ ИНФОРМАЦИЯ</string>
+    <string name="historial_de_pesos_mayusculas">ИСТОРИЯ ВЕСА</string>
+    <string name="historial_de_partos_mayusculas">ИСТОРИЯ ОКРОЛОВ</string>
+    <string name="estado_celo_calculando">Статус охоты: Расчет...</string>
+    <string name="proximo_celo">Следующая охота: -</string>
+    <string name="total_partos">Всего окролов: 0</string>
+    <string name="total_crias">Всего потомства: 0</string>
+    <string name="crias_vivas">Живое потомство: 0</string>
+    <string name="crias_muertas">Мертвое потомство: 0</string>
+    <string name="semental_no">Производитель: Нет</string>
+    <string name="montas_realizadas">Проведено случек: 0</string>
+    <string name="hijas_engendradas">Рождено дочерей: 0</string>
+    <string name="crias_engendradas">Рождено потомства: 0</string>
+    <string name="montas_exitosas">Успешных случек: 0</string>
+</resources>

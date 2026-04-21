@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Cunnis</string>
+    <string name="app_logo">Logo de CUNNIS</string>
+    <!-- Textos generales -->
+    <string name="total">Total</string>
+    <string name="machos">Machos</string>
+    <string name="hembras">Hembras</string>
+    <string name="sin_conejos">No hay conejos registrados</string>
+    <string name="menu">Menú</string>
+    <string name="agregar">Agregar</string>
+    <!-- Textos para la foto -->
+    <string name="foto_conejo">Foto del conejo</string>
+    <string name="estado">Estado</string>
+    <!-- Textos para la version -->
+    <string name="slogan">Gestión Cunicola Inteligente</string>
+    <!-- app slogan -->
+    <string name="raza">Raza:</string>
+    <!-- strings de detalles -->
+    <string name="sexo">Sexo:</string>
+    <string name="edad">Edad:</string>
+    <string name="peso">Peso:</string>
+    <string name="nacimiento">Fecha de Nacimiento: </string>
+    <string name="InformacindeReproduccin">Información de Reproducción</string>
+    <string name="partos">Partos: 0</string>
+    <string name="ultimocelo">Último celo: No registrado</string>
+    <string name="HistorialdePartos">Historial de Partos</string>
+    <string name="InformacionGeneral">Información General</string>
+    <string name="historialpesos">Historial de Pesos </string>
+    <string name="volver">Volver</string>
+    <string name="registrarpeso">Registrar Peso</string>
+    <string name="Editar">Editar</string>
+    <string name="nombreconejo">Nombre del Conejo</string>
+    <string name="status">Estado</string>
+    <string name="registrar_celo">Registrar Celo</string>
+    <!-- Nuevos textos del layout -->
+    <string name="registrar_monta">Registrar Monta</string>
+    <string name="registrar_parto">Registrar Parto</string>
+    <string name="activo">Activo</string>
+    <string name="informacion_general_mayusculas">INFORMACIÓN GENERAL</string>
+    <string name="nacimiento_corto">Nacimiento:</string>
+    <string name="informacion_reproductiva_mayusculas">INFORMACIÓN REPRODUCTIVA</string>
+    <string name="historial_de_pesos_mayusculas">HISTORIAL DE PESOS</string>
+    <string name="historial_de_partos_mayusculas">HISTORIAL DE PARTOS</string>
+    <string name="estado_celo_calculando">Estado celo: Calculando...</string>
+    <string name="proximo_celo">Próximo celo: -</string>
+    <string name="total_partos">Total partos: 0</string>
+    <string name="total_crias">Total crías: 0</string>
+    <string name="crias_vivas">Crías vivas: 0</string>
+    <string name="crias_muertas">Crías muertas: 0</string>
+    <string name="semental_no">Semental: No</string>
+    <string name="montas_realizadas">Montas realizadas: 0</string>
+    <string name="hijas_engendradas">Hijas engendradas: 0</string>
+    <string name="crias_engendradas">Crías engendradas: 0</string>
+    <string name="montas_exitosas">Montas exitosas: 0</string>
+    <!-- menu -->
+    <string name="estadisticas">📊 Estadísticas</string>
+    <string name="buscar">🔍 Buscar conejo</string>
+    <string name="partos_menu">👶 Control de partos</string>
+    <string name="celos">❤️ Control de celos</string>
+    <string name="exportar">📤 Exportar datos</string>
+    <string name="backup">🗃️ Backup de dato</string>
+    <string name="config">⚙️ Configuración</string>
+    <!-- Area Agregar Conejo -->
+    <string name="agregar_conejo">Agregar Conejo</string>
+</resources>

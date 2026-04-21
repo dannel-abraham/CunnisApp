@@ -1,0 +1,504 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#F5F5F5">
+	<LinearLayout
+		android:id="@+id/linear22"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:background="#000000"
+		android:orientation="horizontal">
+		<ImageView
+			android:id="@+id/ivFoto"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:background="#FFFFFF"
+			android:src="@drawable/avatar"
+			android:scaleType="centerCrop"
+			android:layout_marginEnd="16dp" />
+		<LinearLayout
+			android:id="@+id/linear23"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/tvNombre"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Nombre del Conejo"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/tvIdentificador"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:text="#ID000"
+				android:textSize="14sp"
+				android:textColor="#E8F5E9" />
+			<TextView
+				android:id="@+id/tvEstado"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:text="Activo"
+				android:textSize="12sp"
+				android:textColor="#C8E6C9" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear_acciones_rapidas"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:orientation="horizontal"
+		android:visibility="visible">
+		<Button
+			android:id="@+id/btnRegistrarCelo"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Registrar Celo"
+			android:textSize="12sp"
+			android:layout_weight="1"
+			android:visibility="gone"
+			android:layout_marginEnd="4dp" />
+		<Button
+			android:id="@+id/btnRegistrarMonta"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Registrar Monta"
+			android:textSize="12sp"
+			android:layout_weight="1"
+			android:visibility="gone"
+			android:layout_marginEnd="4dp"
+			android:layout_marginStart="4dp" />
+		<Button
+			android:id="@+id/btnRegistrarParto"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Registrar Parto"
+			android:textSize="12sp"
+			android:layout_weight="1"
+			android:visibility="gone"
+			android:layout_marginStart="4dp" />
+	</LinearLayout>
+	<ScrollView
+		android:id="@+id/vscroll3"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:padding="8dp"
+		android:layout_weight="1">
+		<LinearLayout
+			android:id="@+id/linear_contenido_principal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/tvTituloInfoGeneral"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:text="INFORMACIÓN GENERAL"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#4CAF50" />
+			<LinearLayout
+				android:id="@+id/linear_info_general"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:padding="12dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear_fila_raza"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview_etiqueta_raza"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/raza"
+						android:textSize="14sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvRaza"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="Nueva Zelanda"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#333333"
+						android:layout_weight="1" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear_fila_sexo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview_etiqueta_sexo"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/sexo"
+						android:textSize="14sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvGenero"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="Macho"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#2196F3"
+						android:layout_weight="1" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear_fila_edad"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview_etiqueta_edad"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/edad"
+						android:textSize="14sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvEdad"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="6 meses"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#FF9800"
+						android:layout_weight="1" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear_fila_peso"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview_etiqueta_peso"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/peso"
+						android:textSize="14sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvPeso"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="2.5 lb"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#4CAF50"
+						android:layout_weight="1" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear_fila_nacimiento"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview_etiqueta_nacimiento"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/nacimiento_corto"
+						android:textSize="14sp"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+					<TextView
+						android:id="@+id/tvFechaNacimiento"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="2024-01-15"
+						android:textSize="14sp"
+						android:textStyle="bold"
+						android:textColor="#666666"
+						android:layout_weight="1" />
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:id="@+id/tvTituloReproduccion"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:text="@string/informacion_reproductiva_mayusculas"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#E91E63"
+				android:visibility="gone" />
+			<LinearLayout
+				android:id="@+id/layoutReproduccion"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:padding="12dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical"
+				android:visibility="gone">
+				<TextView
+					android:id="@+id/tvPartos"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:text="@string/partos"
+					android:textSize="14sp"
+					android:textColor="#E91E63" />
+				<TextView
+					android:id="@+id/tvUltimoCelo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/ultimocelo"
+					android:textSize="14sp"
+					android:textColor="#E91E63" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/tvTituloPesos"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:text="@string/historial_de_pesos_mayusculas"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#4CAF50" />
+			<ListView
+				android:id="@+id/lvPesos"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_marginBottom="16dp"
+				android:background="#FFFFFF"
+				android:choiceMode="none"
+				android:divider="#E0E0E0" />
+			<TextView
+				android:id="@+id/tvTituloPartos"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:text="@string/historial_de_partos_mayusculas"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#E91E63"
+				android:visibility="gone" />
+			<ListView
+				android:id="@+id/lvPartos"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:background="#FFFFFF"
+				android:choiceMode="none"
+				android:divider="#E0E0E0"
+				android:visibility="gone" />
+			<LinearLayout
+				android:id="@+id/linear_info_reproductiva_detalle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="12dp"
+				android:background="#FFFFFF"
+				android:orientation="vertical"
+				android:visibility="gone">
+				<LinearLayout
+					android:id="@+id/linear_info_hembra"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone">
+					<TextView
+						android:id="@+id/tvEstadoCelo"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="@string/estado_celo_calculando"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvProximoCelo"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="@string/proximo_celo"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvTotalPartos"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="@string/total_partos"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvTotalCrias"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="@string/total_crias"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvCriasVivas"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="Crías vivas: 0"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvCriasMuertas"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/crias_muertas"
+						android:textSize="12sp" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear_info_macho"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone">
+					<TextView
+						android:id="@+id/tvEstadoSemental"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="@string/semental_no"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvTotalMontas"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="@string/montas_realizadas"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvHijasEngendradas"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="@string/hijas_engendradas"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvCriasEngendradas"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="@string/crias_engendradas"
+						android:textSize="12sp" />
+					<TextView
+						android:id="@+id/tvMontasExitosas"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/montas_exitosas"
+						android:textSize="12sp" />
+				</LinearLayout>
+				<TextView
+					android:id="@+id/tvTituloAlertas"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="16dp"
+					android:layout_marginBottom="8dp"
+					android:text="📅 ALERTAS Y RECORDATORIOS"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#FF9800" />
+				<LinearLayout
+					android:id="@+id/linear_alertas"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="16dp"
+					android:padding="12dp"
+					android:background="#FFFFFF"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/tvProximaAlertaPeso"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="8dp"
+						android:text="Próximo pesaje: --"
+						android:textSize="14sp"
+						android:textColor="#4CAF50"
+						android:visibility="gone" />
+					<TextView
+						android:id="@+id/textview5"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="4dp"
+						android:text="Estado celo: --"
+						android:textSize="14sp"
+						android:visibility="gone" />
+					<TextView
+						android:id="@+id/textview6"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="12dp"
+						android:text="@string/proximo_celo"
+						android:textSize="12sp"
+						android:visibility="gone" />
+					<Button
+						android:id="@+id/btnProgramarRecordatorio"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="8dp"
+						android:background="#FF9800"
+						android:text="📅 Programar Recordatorio"
+						android:textSize="12sp"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+		android:id="@+id/linear_botones_inferiores"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:orientation="horizontal"
+		android:elevation="4dp">
+		<Button
+			android:id="@+id/btnVolver"
+			android:layout_width="0dp"
+			android:layout_height="48dp"
+			android:background="#757575"
+			android:text="VOLVER"
+			android:textSize="12sp"
+			android:textColor="#FFFFFF"
+			android:layout_weight="1"
+			android:layout_marginEnd="4dp" />
+		<Button
+			android:id="@+id/btnRegistrarPeso"
+			android:layout_width="0dp"
+			android:layout_height="48dp"
+			android:background="#4CAF50"
+			android:text="REGISTRAR PESO"
+			android:textSize="12sp"
+			android:textColor="#FFFFFF"
+			android:layout_weight="1"
+			android:layout_marginStart="4dp"
+			android:layout_marginEnd="4dp" />
+		<Button
+			android:id="@+id/btnEditar"
+			android:layout_width="0dp"
+			android:layout_height="48dp"
+			android:background="#2196F3"
+			android:text="EDITAR"
+			android:textSize="12sp"
+			android:textColor="#FFFFFF"
+			android:layout_weight="1"
+			android:layout_marginStart="4dp" />
+	</LinearLayout>
+</LinearLayout>
