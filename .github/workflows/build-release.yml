@@ -1,0 +1,73 @@
+name: Build and Release APK
+
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - '**.zip'
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # 1. Checkout del código
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Configurar JDK 17 (recomendado para Android moderno)
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      # 3. Configurar Android SDK
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      # 4. Crear el Gradle Wrapper si no existe
+      - name: Create Gradle Wrapper
+        run: |
+          if [ ! -f "./gradlew" ]; then
+            echo "Creating Gradle wrapper..."
+            gradle wrapper --gradle-version 8.2
+          fi
+          chmod +x ./gradlew
+
+      # 5. Build del APK de release firmado
+      - name: Build Release APK
+        run: |
+          echo "Building signed release APK..."
+          ./gradlew assembleRelease --stacktrace
+
+      # 6. Subir el APK como artifact
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-apk
+          path: app/build/outputs/apk/release/*.apk
+          if-no-files-found: error
+
+      # 7. Crear un Release en GitHub (solo si es push a main)
+      - name: Create GitHub Release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: app/build/outputs/apk/release/*.apk
+          tag_name: v${{ github.run_number }}
+          name: Release v${{ github.run_number }}
+          body: |
+            Build automático desde commit ${{ github.sha }}
+            
+            ## Cambios
+            Ver [commits](https://github.com/${{ github.repository }}/compare) para más detalles.
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
